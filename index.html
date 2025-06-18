@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">
+            <img width="300" src="images/logo.png" alt="">
+        </a>
+        <nav>
+            <a href="#">Войти</a>
+            <a href="#">Заказы</a>
+            <a href="#">Избранное</a>
+            <button>Корзина</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-product">
+            <img src="images/hero.png" alt="">
+            <div class="hero-product-description">
+                <h1>Йогурт  <br>Простоквашино</h1>
+                <audio>
+                <source src="images/Music/Простоквашино.mp3" type="audio/mpeg">
+                </audio>
+                <h2>«Успейте купить», «Оставьте заявку», «Торопитесь, пока действует акция», «Предложение действует до 8-го июля»</h2>
+                <p class="hero-product-price">$10.99</p>
+                <p class="hero-product-about">Основной текст, описывающий, почему этот продукт просто необходимо купить
+</p>
+                <button>Добавить в корзину</button>
+                <p class="hero-product-additional-details">
+Текстовое поле для получения дополнительной информации или мелким шрифтом</p>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Сопутствующие товары</h2>
+            <div class="product-cards">
+                <figure class="product-card">
+                    <img src="images/icons/cards/image-1.png" alt="">
+                    <figcaption>
+                        <h3>Молоко - 2.5%</h3>
+                        <p class="product-card-about">«Успейте купить», «Оставьте заявку», «Торопитесь, пока действует акция», «Предложение действует до 8-го июля».</p>
+                        <p class="product-card-price">$10.99</p>
+                    </figcaption>
+                </figure>
+                <figure class="product-card">
+                    <img src="images/icons/cards/image-2.png" alt="">
+                    <figcaption>
+                        <h3>Сырок со вкусом сгущёнки</h3>
+                        <p class="product-card-about">«Успейте купить», «Оставьте заявку», «Торопитесь, пока действует акция», «Предложение действует до 7-го июля».</p>
+                        <p class="product-card-price">$10.99</p>
+                    </figcaption>
+                </figure>
+                <figure class="product-card">
+                    <img src="images/icons/cards/image-3.png" alt="">
+                    <figcaption>
+                        <h3>Творог - 2%</h3>
+                        <p class="product-card-about">«Успейте купить», «Оставьте заявку», «Торопитесь, пока действует акция», «Предложение действует до 4-го июля».</p>
+                        <p class="product-card-price">$10.99</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h2>Простоквашино</h2>
+            <div class="social-media">
+                <a href="#"><img src="images/icons/Icon.png" alt=""></a>
+                <a href="#"><img src="images/icons/Icon-1.png" alt=""></a>
+                <a href="#"><img src="images/icons/Icon-2.png" alt=""></a>
+                <a href="#"><img src="images/icons/Icon-3.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <ul class="footer-links-list">
+                <h3>Помощь</h3>
+                <li><a href="#">Как сделать заказ</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Доставка</a></li>
+            </ul>
+            <ul class="footer-links-list">
+                <h3>Сотрудничество</h3>
+                <li><a href="#">Вакансии в магазине</a></li>
+                <li><a href="#">Франчайзинг</a></li>
+                <li><a href="#">Аренда площадей</a></li>
+            </ul>
+            <ul class="footer-links-list">
+                <h3>Покупателям</h3>
+                <li><a href="#">Бренды Простоквашино</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">Оценка товаров</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+<script>
+        window.addEventListener("scroll", () => {
+            const audio = document.querySelector("audio");
+            audio.play().catch(e => console.log("Не удалось запустить"));
+        }, { once: true }); // Сработает только один раз
+        window.addEventListener("click", () => {
+            const audio = document.querySelector("audio");
+            audio.play().catch(e => console.log("Не удалось запустить"));
+        }, { once: true }); // Сработает только один раз
+</script>
+
+
+</body>
+</html>
